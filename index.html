@@ -7,16 +7,17 @@
       Nina Carducci, Portfolio d'une photographe professionnelle à Bordeaux
     </title>
 
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+
+    <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -83,7 +84,8 @@
                 ./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-800px-nina-carducci.webp   800w,
                 ./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-1200px-nina-carducci.webp 1200w
               "
-              sizes="(max-width: 600px) 100vw, 100vw"
+              sizes="100vw"
+              width="1280"
               fetchpriority="high"
               class="d-block w-100"
               alt="photographie d'un homme qui traverse sur un passage piéton japonais"
@@ -97,7 +99,8 @@
                 ./assets/images/slider/nicholas-concert-crowd-800px-nina-carducci.webp   800w,
                 ./assets/images/slider/nicholas-concert-crowd-1200px-nina-carducci.webp 1200w
               "
-              sizes="(max-width: 600px) 100vw, 100vw"
+              sizes="100vw"
+              width="1280"
               loading="lazy"
               fetchpriority="low"
               class="d-block w-100"
@@ -112,7 +115,8 @@
                 ./assets/images/slider/edward-wedding-couple-kissing-800px-nina-carducci.webp   800w,
                 ./assets/images/slider/edward-wedding-couple-kissing-1200px-nina-carducci.webp 1200w
               "
-              sizes="(max-width: 600px) 100vw, 100vw"
+              sizes="100vw"
+              width="1280"
               loading="lazy"
               fetchpriority="low"
               class="d-block w-100"
@@ -143,7 +147,7 @@
     <div id="about">
       <div class="picture left">
         <img
-          src="./assets/images/portrait-800px-nina-carducci.webp"
+          src="./assets/images/portrait-280px-nina-carducci.webp"
           alt="photographie de Nina Carducci"
         />
       </div>
@@ -179,7 +183,10 @@
               ./assets/images/gallery/concerts/concert-aaron-paul-redlight-800px-nina-carducci.webp   800w,
               ./assets/images/gallery/concerts/concert-aaron-paul-redlight-1200px-nina-carducci.webp 1200w
             "
-            sizes="100vw"
+            sizes="(max-width: 650px) 100vw"
+            width="400"
+            loading="lazy"
+            height="400"
             alt="foule lors d'un concert sous des lumiéres rouges"
           />
           <img
@@ -191,7 +198,9 @@
               ./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-800px-nina-carducci.webp   800w,
               ./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-1200px-nina-carducci.webp 1200w
             "
-            sizes="100vw"
+            width="400"
+            loading="lazy"
+            height="400"
             alt="photographie d'un homme d'affaire en costume les bras croisés"
           />
           <img
@@ -203,7 +212,9 @@
               ./assets/images/gallery/entreprise/jason-young-woman-laughing-800px-nina-carducci.webp   800w,
               ./assets/images/gallery/entreprise/jason-young-woman-laughing-1200px-nina-carducci.webp 1200w
             "
-            sizes="100vw"
+            width="400"
+            loading="lazy"
+            height="400"
             alt="photographie d'une jeune femme souriante au travail"
           />
           <img
@@ -215,7 +226,9 @@
               ./assets/images/gallery/mariage/hannah-wedding-hands-closeup-800px-nina-carducci.webp   800w,
               ./assets/images/gallery/mariage/hannah-wedding-hands-closeup-1200px-nina-carducci.webp 1200w
             "
-            sizes="100vw"
+            width="400"
+            loading="lazy"
+            height="400"
             alt="photographie en gros plan de mains de jeunes mariées qui se joignent"
           />
           <img
@@ -227,7 +240,9 @@
               ./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-800px-nina-carducci.webp   800w,
               ./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-1200px-nina-carducci.webp 1200w
             "
-            sizes="100vw"
+            width="400"
+            loading="lazy"
+            height="400"
             alt="photographie d'un jeune homme noir qui ferme les yeux eblouis par le soleil"
           />
           <img
@@ -239,19 +254,23 @@
               ./assets/images/gallery/mariage/jakob-owens-wedding-couple-800px-nina-carducci.webp   800w,
               ./assets/images/gallery/mariage/jakob-owens-wedding-couple-1200px-nina-carducci.webp 1200w
             "
-            sizes="100vw"
+            width="400"
+            loading="lazy"
+            height="400"
             alt="photographie d'un couple de jeune mariée heureux et souriant se tenant la main debout devant un palmier"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-400px-nina-carducci.webp"
+            src="./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-800px-nina-carducci.webp"
             srcset="
               ./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-400px-nina-carducci.webp   400w,
               ./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-800px-nina-carducci.webp   800w,
               ./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-1200px-nina-carducci.webp 1200w
             "
-            sizes="100vw"
+            width="400"
+            loading="lazy"
+            height="400"
             alt="photographie d'une jeune femme avec des lunette derriére un grillage"
           />
           <img
@@ -263,19 +282,23 @@
               ./assets/images/gallery/concerts/concert-austin-neill-singer-800px-nina-carducci.webp   800w,
               ./assets/images/gallery/concerts/concert-austin-neill-singer-1200px-nina-carducci.webp 1200w
             "
-            sizes="100vw"
+            width="400"
+            loading="lazy"
+            height="400"
             alt="photographie d'un chanteur lors d'un concert"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/mateus-smiling-young-woman-400px-nina-carducci.webp"
+            src="./assets/images/gallery/entreprise/mateus-smiling-young-woman-800px-nina-carducci.webp"
             srcset="
               ./assets/images/gallery/entreprise/mateus-smiling-young-woman-400px-nina-carducci.webp   400w,
               ./assets/images/gallery/entreprise/mateus-smiling-young-woman-800px-nina-carducci.webp   800w,
               ./assets/images/gallery/entreprise/mateus-smiling-young-woman-1200px-nina-carducci.webp 1200w
             "
-            sizes="100vw"
+            width="400"
+            loading="lazy"
+            height="400"
             alt="photographie d'une jeune femme qui sourit devant son ordinateur"
           />
         </div>
@@ -375,7 +398,7 @@
         </div>
         <div class="picture right">
           <img
-            src="./assets/images/camera-800px-nina-carducci.webp"
+            src="./assets/images/camera-350px-nina-carducci.webp"
             alt="photographie d'un appareil photo professionnel"
           />
         </div>
