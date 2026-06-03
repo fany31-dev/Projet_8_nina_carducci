@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>
       Nina Carducci, Portfolio d'une photographe professionnelle à Bordeaux
     </title>
+    <meta
+      name="description"
+      content="Photographe professionnelle à Bordeaux spécialisée dans les portraits, mariages et événements. Contactez-moi pour un devis gratuit."
+    />
 
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.min.css" />
+    <!-- open Graph (reseaux socio à ajouter) -->
 
+    <!-- Twitter Card -->
+
+    <!-- Prechargement -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +24,11 @@
       rel="stylesheet"
     />
 
+    <!-- Feuille de style -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
+
+    <!-- script -->
     <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -29,8 +41,8 @@
   </head>
   <body>
     <div class="top-header">
-      <h3 class="name">Nina Carducci</h3>
-      <div class="nav">
+      <h1 class="name">Nina Carducci</h1>
+      <nav class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
@@ -45,364 +57,371 @@
             /></a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
-    <div id="header">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-800px-nina-carducci.webp"
-              srcset="
-                ./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-400px-nina-carducci.webp   400w,
-                ./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-800px-nina-carducci.webp   800w,
-                ./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-1200px-nina-carducci.webp 1200w
-              "
-              sizes="100vw"
-              width="1280"
-              fetchpriority="high"
-              class="d-block w-100"
-              alt="photographie d'un homme qui traverse sur un passage piéton japonais"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/images/slider/nicholas-concert-crowd-800px-nina-carducci.webp"
-              srcset="
-                ./assets/images/slider/nicholas-concert-crowd-400px-nina-carducci.webp   400w,
-                ./assets/images/slider/nicholas-concert-crowd-800px-nina-carducci.webp   800w,
-                ./assets/images/slider/nicholas-concert-crowd-1200px-nina-carducci.webp 1200w
-              "
-              sizes="100vw"
-              width="1280"
-              loading="lazy"
-              fetchpriority="low"
-              class="d-block w-100"
-              alt="photographie d'une foule lors d'un concert"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/images/slider/edward-wedding-couple-kissing-800px-nina-carducci.webp"
-              srcset="
-                ./assets/images/slider/edward-wedding-couple-kissing-400px-nina-carducci.webp   400w,
-                ./assets/images/slider/edward-wedding-couple-kissing-800px-nina-carducci.webp   800w,
-                ./assets/images/slider/edward-wedding-couple-kissing-1200px-nina-carducci.webp 1200w
-              "
-              sizes="100vw"
-              width="1280"
-              loading="lazy"
-              fetchpriority="low"
-              class="d-block w-100"
-              alt="couple de jeune marié qui s'embrasse sous une haie d'honneur"
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
+    <main>
+      <div id="header">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-800px-nina-carducci.webp"
+                srcset="
+                  ./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-400px-nina-carducci.webp   400w,
+                  ./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-800px-nina-carducci.webp   800w,
+                  ./assets/images/slider/ryoji-man-crossing-japanese-crosswalk-1200px-nina-carducci.webp 1200w
+                "
+                sizes="100vw"
+                width="1280"
+                fetchpriority="high"
+                class="d-block w-100"
+                alt="photographie d'un homme qui traverse sur un passage piéton japonais"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/slider/nicholas-concert-crowd-800px-nina-carducci.webp"
+                srcset="
+                  ./assets/images/slider/nicholas-concert-crowd-400px-nina-carducci.webp   400w,
+                  ./assets/images/slider/nicholas-concert-crowd-800px-nina-carducci.webp   800w,
+                  ./assets/images/slider/nicholas-concert-crowd-1200px-nina-carducci.webp 1200w
+                "
+                sizes="100vw"
+                width="1280"
+                loading="lazy"
+                fetchpriority="low"
+                class="d-block w-100"
+                alt="photographie d'une foule lors d'un concert"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/slider/edward-wedding-couple-kissing-800px-nina-carducci.webp"
+                srcset="
+                  ./assets/images/slider/edward-wedding-couple-kissing-400px-nina-carducci.webp   400w,
+                  ./assets/images/slider/edward-wedding-couple-kissing-800px-nina-carducci.webp   800w,
+                  ./assets/images/slider/edward-wedding-couple-kissing-1200px-nina-carducci.webp 1200w
+                "
+                sizes="100vw"
+                width="1280"
+                loading="lazy"
+                fetchpriority="low"
+                class="d-block w-100"
+                alt="couple de jeune marié qui s'embrasse sous une haie d'honneur"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-    </div>
-    <div id="about">
-      <div class="picture left">
-        <img
-          src="./assets/images/portrait-280px-nina-carducci.webp"
-          alt="photographie de Nina Carducci"
-        />
+      <div id="about">
+        <div class="picture left">
+          <img
+            src="./assets/images/portrait-280px-nina-carducci.webp"
+            alt="photographie de Nina Carducci, photographe professionnelle à Bordeaux"
+          />
+        </div>
+        <div id="about-me">
+          <h2 class="about-me__title">A propos de moi</h2>
+          <p class="about-me__introduction">
+            Devenir photographe était pour moi une évidence. Comme si j’y étais
+            prédestiné. Saisir un moment, une émotion, une situation, un
+            endroit, une lumière et les rendre immortels, voilà ce qui me fait
+            vibrer.
+          </p>
+          <p>
+            Nous passons notre vie à chercher le bonheur, et lorsque nous y
+            touchons, nous n’avons qu’une envie : le figer au travers de
+            photographies pour le savourer avec les personnes qui sont
+            importantes à nos yeux, ou le partager au plus grand nombre. C’est
+            ce que je vous propose : saisir ces merveilleux moments au travers
+            de mon regard, mon approche, ma technique. Rendre ces moments
+            immortels, afin que vous puissiez y puiser de l’amour, du bonheur,
+            de la tendresse et de lumière à chaque fois que vous poserez les
+            yeux sur vos photos.
+          </p>
+        </div>
       </div>
-      <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
-        <h6 class="about-me__introduction">
-          Devenir photographe était pour moi une évidence. Comme si j’y étais
-          prédestiné. Saisir un moment, une émotion, une situation, un endroit,
-          une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
-        <p>
-          Nous passons notre vie à chercher le bonheur, et lorsque nous y
-          touchons, nous n’avons qu’une envie : le figer au travers de
-          photographies pour le savourer avec les personnes qui sont importantes
-          à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous
-          propose : saisir ces merveilleux moments au travers de mon regard, mon
-          approche, ma technique. Rendre ces moments immortels, afin que vous
-          puissiez y puiser de l’amour, du bonheur, de la tendresse et de
-          lumière à chaque fois que vous poserez les yeux sur vos photos.
-        </p>
+      <div id="gallery">
+        <h2 class="title">Portfolio</h2>
+        <div class="container py-3">
+          <div class="gallery" style="display: none">
+            <img
+              data-gallery-tag="Concert"
+              class="gallery-item"
+              src="./assets/images/gallery/concerts/concert-aaron-paul-redlight-800px-nina-carducci.webp"
+              srcset="
+                ./assets/images/gallery/concerts/concert-aaron-paul-redlight-400px-nina-carducci.webp   400w,
+                ./assets/images/gallery/concerts/concert-aaron-paul-redlight-800px-nina-carducci.webp   800w,
+                ./assets/images/gallery/concerts/concert-aaron-paul-redlight-1200px-nina-carducci.webp 1200w
+              "
+              sizes="(max-width: 650px) 100vw"
+              width="400"
+              loading="lazy"
+              height="400"
+              alt="foule lors d'un concert sous des lumiéres rouges"
+            />
+            <img
+              data-gallery-tag="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-800px-nina-carducci.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-400px-nina-carducci.webp   400w,
+                ./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-800px-nina-carducci.webp   800w,
+                ./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-1200px-nina-carducci.webp 1200w
+              "
+              width="400"
+              loading="lazy"
+              height="400"
+              alt="photographie d'un homme d'affaire en costume les bras croisés"
+            />
+            <img
+              data-gallery-tag="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/jason-young-woman-laughing-800px-nina-carducci.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/jason-young-woman-laughing-400px-nina-carducci.webp   400w,
+                ./assets/images/gallery/entreprise/jason-young-woman-laughing-800px-nina-carducci.webp   800w,
+                ./assets/images/gallery/entreprise/jason-young-woman-laughing-1200px-nina-carducci.webp 1200w
+              "
+              width="400"
+              loading="lazy"
+              height="400"
+              alt="photographie d'une jeune femme souriante au travail"
+            />
+            <img
+              data-gallery-tag="Mariages"
+              class="gallery-item"
+              src="./assets/images/gallery/mariage/hannah-wedding-hands-closeup-800px-nina-carducci.webp"
+              srcset="
+                ./assets/images/gallery/mariage/hannah-wedding-hands-closeup-400px-nina-carducci.webp   400w,
+                ./assets/images/gallery/mariage/hannah-wedding-hands-closeup-800px-nina-carducci.webp   800w,
+                ./assets/images/gallery/mariage/hannah-wedding-hands-closeup-1200px-nina-carducci.webp 1200w
+              "
+              width="400"
+              loading="lazy"
+              height="400"
+              alt="photographie en gros plan de mains de jeunes mariées qui se joignent"
+            />
+            <img
+              data-gallery-tag="Portrait"
+              class="gallery-item"
+              src="./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-800px-nina-carducci.webp"
+              srcset="
+                ./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-400px-nina-carducci.webp   400w,
+                ./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-800px-nina-carducci.webp   800w,
+                ./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-1200px-nina-carducci.webp 1200w
+              "
+              width="400"
+              loading="lazy"
+              height="400"
+              alt="photographie d'un jeune homme noir qui ferme les yeux eblouis par le soleil"
+            />
+            <img
+              data-gallery-tag="Mariages"
+              class="gallery-item"
+              src="./assets/images/gallery/mariage/jakob-owens-wedding-couple-800px-nina-carducci.webp"
+              srcset="
+                ./assets/images/gallery/mariage/jakob-owens-wedding-couple-400px-nina-carducci.webp   400w,
+                ./assets/images/gallery/mariage/jakob-owens-wedding-couple-800px-nina-carducci.webp   800w,
+                ./assets/images/gallery/mariage/jakob-owens-wedding-couple-1200px-nina-carducci.webp 1200w
+              "
+              width="400"
+              loading="lazy"
+              height="400"
+              alt="photographie d'un couple de jeune mariée heureux et souriant se tenant la main debout devant un palmier"
+            />
+            <img
+              data-gallery-tag="Portrait"
+              class="gallery-item"
+              src="./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-800px-nina-carducci.webp"
+              srcset="
+                ./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-400px-nina-carducci.webp   400w,
+                ./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-800px-nina-carducci.webp   800w,
+                ./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-1200px-nina-carducci.webp 1200w
+              "
+              width="400"
+              loading="lazy"
+              height="400"
+              alt="photographie d'une jeune femme avec des lunette derriére un grillage"
+            />
+            <img
+              data-gallery-tag="Concert"
+              class="gallery-item"
+              src="./assets/images/gallery/concerts/concert-austin-neill-singer-800px-nina-carducci.webp"
+              srcset="
+                ./assets/images/gallery/concerts/concert-austin-neill-singer-400px-nina-carducci.webp   400w,
+                ./assets/images/gallery/concerts/concert-austin-neill-singer-800px-nina-carducci.webp   800w,
+                ./assets/images/gallery/concerts/concert-austin-neill-singer-1200px-nina-carducci.webp 1200w
+              "
+              width="400"
+              loading="lazy"
+              height="400"
+              alt="photographie d'un chanteur lors d'un concert"
+            />
+            <img
+              data-gallery-tag="Entreprises"
+              class="gallery-item"
+              src="./assets/images/gallery/entreprise/mateus-smiling-young-woman-800px-nina-carducci.webp"
+              srcset="
+                ./assets/images/gallery/entreprise/mateus-smiling-young-woman-400px-nina-carducci.webp   400w,
+                ./assets/images/gallery/entreprise/mateus-smiling-young-woman-800px-nina-carducci.webp   800w,
+                ./assets/images/gallery/entreprise/mateus-smiling-young-woman-1200px-nina-carducci.webp 1200w
+              "
+              width="400"
+              loading="lazy"
+              height="400"
+              alt="photographie d'une jeune femme qui sourit devant son ordinateur"
+            />
+          </div>
+        </div>
+        <div class="quote">
+          <figure>
+            <blockquote>
+              <h1 class="quote__text">
+                Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
+                ou qu’un fait est traduit en photo, il cesse d’être un fait pour
+                devenir une opinion. L’inexactitude n’existe pas en
+                photographie. Toutes les photos sont exactes. Aucune d’elles
+                n’est la vérité.
+              </h1>
+            </blockquote>
+            <figcaption class="quote__author">- Richard Avedon</figcaption>
+          </figure>
+        </div>
       </div>
-    </div>
-    <div id="gallery">
-      <h3 class="title">Portfolio</h3>
-      <div class="container py-3">
-        <div class="gallery" style="display: none">
-          <img
-            data-gallery-tag="Concert"
-            class="gallery-item"
-            src="./assets/images/gallery/concerts/concert-aaron-paul-redlight-800px-nina-carducci.webp"
-            srcset="
-              ./assets/images/gallery/concerts/concert-aaron-paul-redlight-400px-nina-carducci.webp   400w,
-              ./assets/images/gallery/concerts/concert-aaron-paul-redlight-800px-nina-carducci.webp   800w,
-              ./assets/images/gallery/concerts/concert-aaron-paul-redlight-1200px-nina-carducci.webp 1200w
-            "
-            sizes="(max-width: 650px) 100vw"
-            width="400"
-            loading="lazy"
-            height="400"
-            alt="foule lors d'un concert sous des lumiéres rouges"
-          />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-800px-nina-carducci.webp"
-            srcset="
-              ./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-400px-nina-carducci.webp   400w,
-              ./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-800px-nina-carducci.webp   800w,
-              ./assets/images/gallery/entreprise/ali-morshedlou-businessman-arms-crossed-1200px-nina-carducci.webp 1200w
-            "
-            width="400"
-            loading="lazy"
-            height="400"
-            alt="photographie d'un homme d'affaire en costume les bras croisés"
-          />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/jason-young-woman-laughing-800px-nina-carducci.webp"
-            srcset="
-              ./assets/images/gallery/entreprise/jason-young-woman-laughing-400px-nina-carducci.webp   400w,
-              ./assets/images/gallery/entreprise/jason-young-woman-laughing-800px-nina-carducci.webp   800w,
-              ./assets/images/gallery/entreprise/jason-young-woman-laughing-1200px-nina-carducci.webp 1200w
-            "
-            width="400"
-            loading="lazy"
-            height="400"
-            alt="photographie d'une jeune femme souriante au travail"
-          />
-          <img
-            data-gallery-tag="Mariages"
-            class="gallery-item"
-            src="./assets/images/gallery/mariage/hannah-wedding-hands-closeup-800px-nina-carducci.webp"
-            srcset="
-              ./assets/images/gallery/mariage/hannah-wedding-hands-closeup-400px-nina-carducci.webp   400w,
-              ./assets/images/gallery/mariage/hannah-wedding-hands-closeup-800px-nina-carducci.webp   800w,
-              ./assets/images/gallery/mariage/hannah-wedding-hands-closeup-1200px-nina-carducci.webp 1200w
-            "
-            width="400"
-            loading="lazy"
-            height="400"
-            alt="photographie en gros plan de mains de jeunes mariées qui se joignent"
-          />
-          <img
-            data-gallery-tag="Portrait"
-            class="gallery-item"
-            src="./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-800px-nina-carducci.webp"
-            srcset="
-              ./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-400px-nina-carducci.webp   400w,
-              ./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-800px-nina-carducci.webp   800w,
-              ./assets/images/gallery/portraits/ade-black-man-portrait-sunlight-1200px-nina-carducci.webp 1200w
-            "
-            width="400"
-            loading="lazy"
-            height="400"
-            alt="photographie d'un jeune homme noir qui ferme les yeux eblouis par le soleil"
-          />
-          <img
-            data-gallery-tag="Mariages"
-            class="gallery-item"
-            src="./assets/images/gallery/mariage/jakob-owens-wedding-couple-800px-nina-carducci.webp"
-            srcset="
-              ./assets/images/gallery/mariage/jakob-owens-wedding-couple-400px-nina-carducci.webp   400w,
-              ./assets/images/gallery/mariage/jakob-owens-wedding-couple-800px-nina-carducci.webp   800w,
-              ./assets/images/gallery/mariage/jakob-owens-wedding-couple-1200px-nina-carducci.webp 1200w
-            "
-            width="400"
-            loading="lazy"
-            height="400"
-            alt="photographie d'un couple de jeune mariée heureux et souriant se tenant la main debout devant un palmier"
-          />
-          <img
-            data-gallery-tag="Portrait"
-            class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-800px-nina-carducci.webp"
-            srcset="
-              ./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-400px-nina-carducci.webp   400w,
-              ./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-800px-nina-carducci.webp   800w,
-              ./assets/images/gallery/portraits/nino-portrait-young-woman-with-glasses-1200px-nina-carducci.webp 1200w
-            "
-            width="400"
-            loading="lazy"
-            height="400"
-            alt="photographie d'une jeune femme avec des lunette derriére un grillage"
-          />
-          <img
-            data-gallery-tag="Concert"
-            class="gallery-item"
-            src="./assets/images/gallery/concerts/concert-austin-neill-singer-800px-nina-carducci.webp"
-            srcset="
-              ./assets/images/gallery/concerts/concert-austin-neill-singer-400px-nina-carducci.webp   400w,
-              ./assets/images/gallery/concerts/concert-austin-neill-singer-800px-nina-carducci.webp   800w,
-              ./assets/images/gallery/concerts/concert-austin-neill-singer-1200px-nina-carducci.webp 1200w
-            "
-            width="400"
-            loading="lazy"
-            height="400"
-            alt="photographie d'un chanteur lors d'un concert"
-          />
-          <img
-            data-gallery-tag="Entreprises"
-            class="gallery-item"
-            src="./assets/images/gallery/entreprise/mateus-smiling-young-woman-800px-nina-carducci.webp"
-            srcset="
-              ./assets/images/gallery/entreprise/mateus-smiling-young-woman-400px-nina-carducci.webp   400w,
-              ./assets/images/gallery/entreprise/mateus-smiling-young-woman-800px-nina-carducci.webp   800w,
-              ./assets/images/gallery/entreprise/mateus-smiling-young-woman-1200px-nina-carducci.webp 1200w
-            "
-            width="400"
-            loading="lazy"
-            height="400"
-            alt="photographie d'une jeune femme qui sourit devant son ordinateur"
-          />
+      <div id="services">
+        <h2 class="title">Mes services</h2>
+        <div class="container">
+          <div class="service">
+            <div class="service__description">
+              <h3>Shooting photo</h3>
+              <p>
+                Pour capturer vos moments les plus précieux et garder un
+                souvenir impérissable. Je me déplace en Île-de-France pour
+                réaliser vos photos
+              </p>
+            </div>
+            <div class="service__price">
+              <h4>350€/demi journée</h4>
+              <span>Matériel, déplacement inclus</span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__description">
+              <h3>Retouches</h3>
+              <p>
+                Vous souhaitez retoucher vos photos pour un résultat
+                professionnel ? Bénéficier d’un rendu optimal pour vos
+                publications
+              </p>
+            </div>
+            <div class="service__price">
+              <h4>50€/photo</h4>
+              <span>2 AR par photo</span>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service__description">
+              <h3>Album photos</h3>
+              <p>
+                Partagez avec vos proches et vos clients les photos des moments
+                partagés ensemble à travers un album photo personnalisé
+              </p>
+            </div>
+            <div class="service__price">
+              <h4>400€ album A4</h4>
+              <span>30 pages recto/verso</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="quote">
         <figure>
           <blockquote>
             <h1 class="quote__text">
-              Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
-              qu’un fait est traduit en photo, il cesse d’être un fait pour
-              devenir une opinion. L’inexactitude n’existe pas en photographie.
-              Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+              De manière inconsciente, je crois, je guette un regard, une
+              expression, des traits ou une nostalgie capable de résumer ou plus
+              exactement de révéler une vie
             </h1>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
-    </div>
-    <div id="services">
-      <h3 class="title">Mes services</h3>
-      <div class="container">
-        <div class="service">
-          <div class="service__description">
-            <h3>Shooting photo</h3>
+      <div id="contact">
+        <div class="container">
+          <div class="form-container">
+            <h2>Une question ? Une demande de devis ?</h2>
             <p>
-              Pour capturer vos moments les plus précieux et garder un souvenir
-              impérissable. Je me déplace en Île-de-France pour réaliser vos
-              photos
+              N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
+              heures
             </p>
+            <form action="" method="post">
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input type="submit" value="Envoyer" />
+            </form>
           </div>
-          <div class="service__price">
-            <h4>350€/demi journée</h4>
-            <span>Matériel, déplacement inclus</span>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service__description">
-            <h3>Retouches</h3>
-            <p>
-              Vous souhaitez retoucher vos photos pour un résultat professionnel
-              ? Bénéficier d’un rendu optimal pour vos publications
-            </p>
-          </div>
-          <div class="service__price">
-            <h4>50€/photo</h4>
-            <span>2 AR par photo</span>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service__description">
-            <h3>Album photos</h3>
-            <p>
-              Partagez avec vos proches et vos clients les photos des moments
-              partagés ensemble à travers un album photo personnalisé
-            </p>
-          </div>
-          <div class="service__price">
-            <h4>400€ album A4</h4>
-            <span>30 pages recto/verso</span>
+          <div class="picture right">
+            <img
+              src="./assets/images/camera-350px-nina-carducci.webp"
+              alt="photographie d'un appareil photo professionnel - Nina Carducci"
+            />
           </div>
         </div>
       </div>
-    </div>
-    <div class="quote">
-      <figure>
-        <blockquote>
-          <h1 class="quote__text">
-            De manière inconsciente, je crois, je guette un regard, une
-            expression, des traits ou une nostalgie capable de résumer ou plus
-            exactement de révéler une vie
-          </h1>
-        </blockquote>
-        <figcaption class="quote__author">- Richard Avedon</figcaption>
-      </figure>
-    </div>
-    <div id="contact">
-      <div class="container">
-        <div class="form-container">
-          <h3>Une question ? Une demande de devis ?</h3>
-          <p>
-            N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
-          </p>
-          <form action="" method="post">
-            <label>Nom</label>
-            <input type="text" name="nom" id="nom" />
-            <label>Email</label>
-            <input type="email" name="email" id="email" />
-            <label>Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input type="submit" value="Envoyer" />
-          </form>
-        </div>
-        <div class="picture right">
-          <img
-            src="./assets/images/camera-350px-nina-carducci.webp"
-            alt="photographie d'un appareil photo professionnel"
-          />
-        </div>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
